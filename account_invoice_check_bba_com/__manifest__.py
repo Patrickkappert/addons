@@ -19,5 +19,5 @@
         "views/account_invoice.xml"
     ],
     "installable": True,
-    "license": "AGPL-3",
+
 }

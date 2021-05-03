@@ -1,0 +1,3 @@
+This module adds a commercial legal requirement concerning
+the price of a delivery method when it includes/excludes the taxes.
+It is mandatory to add a label explaining that the price is taxes included/excluded.

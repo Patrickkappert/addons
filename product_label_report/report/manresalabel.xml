@@ -8,7 +8,7 @@
 <strong t-field="product.name"/>
 </div>
 <div style="font-size: 1.9em; vertical-align:bottom; position: absolute; bottom: 15; left: 10;">
-<strong t-field="product.lst_price" t-options="{'widget': 'monetary', 'display_currency': product.company_id.currency_id}"/>
+<strong t-esc="product.total_with_vat*1.2" t-options="{'widget': 'monetary', 'display_currency': product.company_id.currency_id}"/>
 </div>
 <t t-if="product.packaging_ids">
 <div style="vertical-align: bottom; position: absolute; bottom: 20; right: 10; font-size: 0.7em; text-align: left;">

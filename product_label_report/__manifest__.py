@@ -16,5 +16,6 @@
         "report/same_product_label.xml",
         "report/product_label.xml",
         "report/product_reports.xml",
+       "report/manresalabel.xml",
     ],
 }

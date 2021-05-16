@@ -4,16 +4,15 @@
 <xpath expr="." position="replace">
 <t t-name="product.report_simple_label">
 <div style="height: 4cm; width: 6cm; border: 2px solid black; text-align: center; margin: 0; padding: 0; position: relative; display: inline-table;">
-<div style="font-size: 1.9em; vertical-align:bottom; position: absolute; bottom: 15; left: 10;">
-<span t-esc="product.total_with_vat*1.2" t-options="{'widget': 'monetary', 'display_currency': product.company_id.currency_id}"/>
-    <span t-field="product.eco_label" style="font-size:12pt; margin: 0;"/>
-
+<div style="font-size: 1em; vertical-align:bottom; position: absolute; bottom: 5; left: 5;">
+<span t-esc="product.total_with_vat*1.2" style="font-size:20pt; font-style:bold margin: 5;" t-options="{'widget': 'monetary', 'display_currency':product.company_id.currency_id}"/>
+ <span t-field="product.eco_label" style="font-size:10pt; margin: 5;"/>
+ <div t-field="product.name" style="font-size:16pt; font-style:bold margin: 5;"/>
     
-<div class="text-center" style="margin: 10px; font-size: 1em; text-align: center;">
-<strong t-field="product.name"/>
-        <span t-field="product.local_label" style="font-size:12pt; margin: 0;"/>
-          <span t-field="product.origin_label" style="font-size:12pt; margin: 0;"/>
-          <span t-field="product.note" style="font-size:12pt; margin: 0;"/>
+<div class="text-center" style="margin: 8px; font-size: 1em; text-align: center;">
+        <span t-field="product.local_label" style="font-size:10pt; margin: 0;"/>
+          <span t-field="product.origin_label" style="font-size:10pt; margin: 0;"/>
+          <span t-field="product.note" style="font-size:10pt; margin: 0;"/>
 </div></div>
 
 <t t-if="product.packaging_ids">

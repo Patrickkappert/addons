@@ -1,6 +1,6 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-#	* stock_product_weight_on_receipt
+# 	* stock_product_weight_on_receipt
 #
 msgid ""
 msgstr ""
@@ -10,32 +10,42 @@ msgstr ""
 "PO-Revision-Date: 2019-02-18 13:46+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
 #. module: stock_product_weight_on_receipt
-#: model:ir.ui.view,arch_db:stock_product_weight_on_receipt.report_receipt_weight
-msgid "<span>Weight</span>"
+#: model_terms:ir.ui.view,arch_db:stock_product_weight_on_receipt.report_receipt_weight
+#, fuzzy
+msgid "<strong>Weight</strong>"
 msgstr "<span>Poids/unité</span>"
 
 #. module: stock_product_weight_on_receipt
-#: model:ir.model,name:stock_product_weight_on_receipt.model_stock_pack_operation
-msgid "Packing Operation"
-msgstr "Colisage"
+#: model:ir.model,name:stock_product_weight_on_receipt.model_stock_move_line
+msgid "Product Moves (Stock Move Line)"
+msgstr ""
 
 #. module: stock_product_weight_on_receipt
-#: model:ir.model,name:stock_product_weight_on_receipt.model_purchase_order_line
-msgid "Purchase Order Line"
-msgstr "Ligne de commande d'achat"
+#: model:ir.model,name:stock_product_weight_on_receipt.model_stock_move
+msgid "Stock Move"
+msgstr ""
 
 #. module: stock_product_weight_on_receipt
-#: model:ir.model.fields,field_description:stock_product_weight_on_receipt.field_stock_pack_operation_display_weight
+#: model:ir.model.fields,field_description:stock_product_weight_on_receipt.field_stock_move__display_weight
+#: model:ir.model.fields,field_description:stock_product_weight_on_receipt.field_stock_move_line__display_weight
 msgid "Weight"
 msgstr "Poids"
 
 #. module: stock_product_weight_on_receipt
-#: model:ir.model.fields,field_description:stock_product_weight_on_receipt.field_stock_pack_operation_display_unit
+#: model:ir.model.fields,field_description:stock_product_weight_on_receipt.field_stock_move__display_unit
+#: model:ir.model.fields,field_description:stock_product_weight_on_receipt.field_stock_move_line__display_unit
 msgid "Weight Unit"
 msgstr "Unité de poids"
+
+#~ msgid "Packing Operation"
+#~ msgstr "Colisage"
+
+#~ msgid "Purchase Order Line"
+#~ msgstr "Ligne de commande d'achat"

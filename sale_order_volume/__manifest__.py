@@ -18,9 +18,9 @@
 ##############################################################################
 {
     "name": "Sale Order Volume",
-    "version": "12.0.1.1.0",
+    "version": "12.0.1.1.1",
     "depends": ["sale", "stock", "website_sale"],
-    "author": "Coop IT Easy SCRLfs",
+    "author": "Coop IT Easy SC",
     "license": "AGPL-3",
     "category": "Sale",
     "website": "https://coopiteasy.be",

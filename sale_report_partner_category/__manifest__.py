@@ -3,10 +3,10 @@
 {
     "name": "Sale Report Partner Category",
     "summary": "Add a category field to sale reports",
-    "author": "Coop IT Easy SCRLfs",
+    "author": "Coop IT Easy SC",
     "website": "https://coopiteasy.be",
     "category": "Sales",
-    "version": "12.0.1.0.0",
+    "version": "12.0.1.0.1",
     "license": "AGPL-3",
     "depends": [
         "sale",

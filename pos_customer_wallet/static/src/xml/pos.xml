@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<template id="template">
+    <t t-extend="PaymentScreenWidget">
+        <t t-jquery=".payment-buttons" t-operation="after">
+            <div class="balance-container">
+                <!--
+                    TODO: The div and h3 will be undefined if this is false.
+                    What happens if the toggle is later enabled?
+                -->
+                <t t-if="widget.pos.config.is_enabled_customer_wallet">
+                    <h3 class="balance-header">
+                        <t t-if="widget.pos.get_client()">
+                            Customer Wallet Balance
+                        </t>
+                    </h3>
+                    <div class='balance'>
+                        <t t-if="widget.pos.get_client()">
+                            <t
+                                t-esc="widget.format_currency(widget.pos.get_client().customer_wallet_balance)"
+                            />
+                        </t>
+                    </div>
+                </t>
+            </div>
+        </t>
+    </t>
+
+    <t t-extend="PosTicket">
+        <!--
+            Customer must see his balance even if it does not use
+            customer wallet as a payement method for this order.
+            Because it's the only way he can check his balance.
+        -->
+        <t t-jquery=".receipt-change" t-operation="after">
+            <table class="receipt-customer-wallet-balance">
+                <tr>
+                    <td>Customer Wallet Balance:</td>
+                    <td class="pos-right-align">
+                        <t
+                            t-esc="widget.format_currency(order.pos.get_client().customer_wallet_balance)"
+                        />
+                    </td>
+                </tr>
+            </table>
+        </t>
+    </t>
+
+    <t t-extend="XmlReceipt">
+        <t t-jquery=".before-footer" t-operation="before">
+            <line class="total_foodprint_amount">
+                <left>Customer Wallet Balance:</left>
+                <right><t
+                        t-esc="widget.format_currency(receipt.customer_wallet_balance)"
+                    /></right>
+            </line>
+        </t>
+    </t>
+</template>

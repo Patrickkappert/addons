@@ -43,12 +43,12 @@ Credits
 Authors
 ~~~~~~~
 
-* Houssine BAKKALI <houssine.bakkali@gmail.com>
+* Coop IT Easy SC
 
 Contributors
 ~~~~~~~~~~~~
 
-* `Coop IT Easy SCRLfs <https://coopiteasy.be>`_:
+* `Coop IT Easy SC <https://coopiteasy.be>`_:
 
   * Houssine BAKKALI
   * Carmen Bianca Bakker
